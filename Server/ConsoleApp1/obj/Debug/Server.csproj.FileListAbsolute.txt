@@ -1,0 +1,7 @@
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
