@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace ConsoleApp1
+namespace Catchy.Multiplayer.GameServer
 {
     public class DataState
     {
