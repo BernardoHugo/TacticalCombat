@@ -20,23 +20,42 @@ namespace Catchy.Multiplayer.GameClient
 
         private Dictionary<string, IMessageObserver> messageObservers;
 
+        private List<ServerMessage> serverMessageQueue;
+
         private void Awake()
         {
             messageObservers = new Dictionary<string, IMessageObserver>();
+            serverMessageQueue = new List<ServerMessage>();
             tcpConnection = new TcpConnection(serverIp, serverPort);
             tcpConnection.OnMessageReceived += OnMessageReceived;
         }
 
+        private void Update()
+        {
+            lock (serverMessageQueue)
+            {
+                while (serverMessageQueue.Count > 0)
+                {
+                    ServerMessage message = serverMessageQueue[0];
+                    if (messageObservers.ContainsKey(message.name))
+                    {
+                        messageObservers[message.name].OnServerMessageReceived(message.data);
+                    }
+                    else
+                    {
+                        Console.WriteLine("[Client] OnMessageReceived: No observer for " + message.name + " message");
+                    }
+                    serverMessageQueue.RemoveAt(0);
+                }
+            }
+        }
+
         private void OnMessageReceived(string messageJson)
         {
-            ServerMessage message = JsonConvert.DeserializeObject<ServerMessage>(messageJson);
-            if (messageObservers.ContainsKey(message.name))
+            lock (serverMessageQueue)
             {
-                messageObservers[message.name].OnServerMessageReceived(message.data);
-            }
-            else
-            {
-                Console.WriteLine("[Client] OnMessageReceived: No observer for " + message.name + " message");
+                ServerMessage message = JsonConvert.DeserializeObject<ServerMessage>(messageJson);
+                serverMessageQueue.Add(message);
             }
         }
 

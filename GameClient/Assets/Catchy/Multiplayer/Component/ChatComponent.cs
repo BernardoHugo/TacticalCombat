@@ -33,7 +33,7 @@ public class ChatComponent : MonoBehaviour {
 
     private void OnChatMessageReceived(ChatMessage chatMessage)
     {
-        chat.text += string.Format("\n[{0}]: \n{1}",chatMessage.username,chatMessage.message);
+        chat.text += string.Format("\n[{0}]: \n{1}", chatMessage.username, chatMessage.message);
     }
 
     private void SendChatMessage(string message)
