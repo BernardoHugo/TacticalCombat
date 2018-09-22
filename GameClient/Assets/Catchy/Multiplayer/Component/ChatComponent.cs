@@ -1,10 +1,13 @@
-﻿ using System;
-using Catchy.Multiplayer.Common.Chat;
+﻿using System;
+using Catchy.Multiplayer.Chat;
+using Catchy.Multiplayer.Chat.Client;
+using Catchy.Multiplayer.Chat.Common;
 using Catchy.Multiplayer.GameClient;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChatComponent : MonoBehaviour {
+public class ChatComponent : MonoBehaviour
+{
 
     [SerializeField]
     private Client client;
@@ -18,7 +21,7 @@ public class ChatComponent : MonoBehaviour {
     [SerializeField]
     private InputField messageBox;
 
-    private ChatHandler chatHandler;
+    private ChatClientHandler _chatClientHandler;
 
     private void Awake()
     {
@@ -27,8 +30,8 @@ public class ChatComponent : MonoBehaviour {
 
     private void Start()
     {
-        chatHandler = new ChatHandler(client);
-        chatHandler.OnChatMessageReceived += OnChatMessageReceived;
+        _chatClientHandler = new ChatClientHandler(client);
+        _chatClientHandler.OnChatMessageReceived += OnChatMessageReceived;
     }
 
     private void OnChatMessageReceived(ChatMessage chatMessage)
@@ -38,7 +41,10 @@ public class ChatComponent : MonoBehaviour {
 
     private void SendChatMessage(string message)
     {
-        chatHandler.SendChatMessage(username.text, message);
-        messageBox.text = "";
+        if (string.IsNullOrEmpty(username.text) && string.IsNullOrEmpty(message))
+        {
+            _chatClientHandler.SendChatMessage(username.text, message);
+            messageBox.text = "";
+        }
     }
 }

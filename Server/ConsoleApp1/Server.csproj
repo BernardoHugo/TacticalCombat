@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Catchy</RootNamespace>
     <AssemblyName>Catchy</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -45,14 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Multiplayer\Common\Chat\ChatHandler.cs" />
-    <Compile Include="Multiplayer\Common\Chat\ChatMessage.cs" />
-    <Compile Include="Multiplayer\Common\IMessageObserver.cs" />
-    <Compile Include="Multiplayer\Common\ServerMessage.cs" />
-    <Compile Include="Multiplayer\GameServer\Server.cs" />
-    <Compile Include="Multiplayer\GameServer\Client.cs" />
-    <Compile Include="Multiplayer\GameServer\TcpServer.cs" />
-    <Compile Include="Multiplayer\GameServer\DataState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +52,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MultiplayerLibrary\MultiplayerLibrary.csproj">
+      <Project>{eb020ba8-77ec-44ea-a866-2641dbd21847}</Project>
+      <Name>MultiplayerLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

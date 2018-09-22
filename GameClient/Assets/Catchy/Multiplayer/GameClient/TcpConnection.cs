@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using Catchy.Multiplayer.Common;
 using UnityEngine;
 
 namespace Catchy.Multiplayer.GameClient

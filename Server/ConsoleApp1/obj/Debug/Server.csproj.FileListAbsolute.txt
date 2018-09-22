@@ -8,3 +8,5 @@ C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug
 C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\Catchy.pdb
 C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\Catchy.exe
 C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\obj\Debug\Catchy.pdb
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\MultiplayerLibrary.dll
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\ConsoleApp1\bin\Debug\MultiplayerLibrary.pdb

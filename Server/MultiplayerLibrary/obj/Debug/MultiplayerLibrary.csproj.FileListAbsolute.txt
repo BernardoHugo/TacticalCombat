@@ -1,0 +1,9 @@
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\bin\Debug\MultiplayerLibrary.dll
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\bin\Debug\MultiplayerLibrary.pdb
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\bin\Debug\UnityEngine.dll
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\bin\Debug\UnityEngine.xml
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\obj\Debug\MultiplayerLibrary.csprojAssemblyReference.cache
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\obj\Debug\MultiplayerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\obj\Debug\MultiplayerLibrary.csproj.CopyComplete
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\obj\Debug\MultiplayerLibrary.dll
+C:\Users\Bernardo\Documents\Projects\TacticalCombat\Server\MultiplayerLibrary\obj\Debug\MultiplayerLibrary.pdb

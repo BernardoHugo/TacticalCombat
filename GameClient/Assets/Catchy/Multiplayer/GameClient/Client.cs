@@ -39,7 +39,7 @@ namespace Catchy.Multiplayer.GameClient
                     ServerMessage message = serverMessageQueue[0];
                     if (messageObservers.ContainsKey(message.name))
                     {
-                        messageObservers[message.name].OnServerMessageReceived(message.data);
+                        messageObservers[message.name].OnMessageReceived(message.data);
                     }
                     else
                     {
