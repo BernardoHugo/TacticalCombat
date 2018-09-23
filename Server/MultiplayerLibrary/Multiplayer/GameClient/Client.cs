@@ -9,61 +9,61 @@ namespace Catchy.Multiplayer.GameClient
 {
     public class Client
     {        
-        private string serverIp;
+        private string _serverIp;
 
-        private int serverPort;
+        private int _serverPort;
 
-        private TcpConnection tcpConnection;
+        private TcpConnection _tcpConnection;
 
-        private Dictionary<string, IMessageObserver> messageObservers;
+        private Dictionary<string, IMessageObserver> _messageObservers;
 
-        private List<ServerMessage> serverMessageQueue;
+        private List<ServerMessage> _serverMessageQueue;
 
-        private Client(string serverIp, int serverPort)
+        public Client(string serverIp, int serverPort)
         {
-            this.serverIp = serverIp;
-            this.serverPort = serverPort;
+            this._serverIp = serverIp;
+            this._serverPort = serverPort;
             
-            messageObservers = new Dictionary<string, IMessageObserver>();
-            serverMessageQueue = new List<ServerMessage>();
-            tcpConnection = new TcpConnection(serverIp, serverPort);
-            tcpConnection.OnMessageReceived += OnMessageReceived;
+            _messageObservers = new Dictionary<string, IMessageObserver>();
+            _serverMessageQueue = new List<ServerMessage>();
+            _tcpConnection = new TcpConnection(serverIp, serverPort);
+            _tcpConnection.OnMessageReceived += OnMessageReceived;
         }
 
         private void Update()
         {
-            lock (serverMessageQueue)
+            lock (_serverMessageQueue)
             {
-                while (serverMessageQueue.Count > 0)
+                while (_serverMessageQueue.Count > 0)
                 {
-                    ServerMessage message = serverMessageQueue[0];
-                    if (messageObservers.ContainsKey(message.name))
+                    ServerMessage message = _serverMessageQueue[0];
+                    if (_messageObservers.ContainsKey(message.Name))
                     {
-                        messageObservers[message.name].OnMessageReceived(message.data);
+                        _messageObservers[message.Name].OnMessageReceived(message.Data);
                     }
                     else
                     {
-                        Console.WriteLine("[Client] OnMessageReceived: No observer for " + message.name + " message");
+                        Console.WriteLine("[Client] OnMessageReceived: No observer for " + message.Name + " message");
                     }
-                    serverMessageQueue.RemoveAt(0);
+                    _serverMessageQueue.RemoveAt(0);
                 }
             }
         }
 
         private void OnMessageReceived(string messageJson)
         {
-            lock (serverMessageQueue)
+            lock (_serverMessageQueue)
             {
                 ServerMessage message = JsonConvert.DeserializeObject<ServerMessage>(messageJson);
-                serverMessageQueue.Add(message);
+                _serverMessageQueue.Add(message);
             }
         }
 
         public void AddMessageObserver(string messageName, IMessageObserver messageObserver)
         {
-            if (!messageObservers.ContainsKey(messageName))
+            if (!_messageObservers.ContainsKey(messageName))
             {
-                messageObservers.Add(messageName, messageObserver);
+                _messageObservers.Add(messageName, messageObserver);
             }
             else
             {
@@ -88,7 +88,7 @@ namespace Catchy.Multiplayer.GameClient
 
         private void SendTcpMessage(byte[] message)
         {
-            tcpConnection.SendMessage(message);
+            _tcpConnection.SendMessage(message);
         }
     }
 }

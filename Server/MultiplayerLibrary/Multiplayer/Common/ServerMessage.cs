@@ -2,13 +2,13 @@
 {
     class ServerMessage
     {
-        public string name;
-        public string data;
+        public string Name;
+        public string Data;
 
         public ServerMessage(string name, string data)
         {
-            this.name = name;
-            this.data = data;
+            this.Name = name;
+            this.Data = data;
         }
     }
 }

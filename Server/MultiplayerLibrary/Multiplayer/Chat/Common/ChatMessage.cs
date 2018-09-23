@@ -4,24 +4,24 @@ namespace Catchy.Multiplayer.Chat.Common
 {
     public struct ChatMessage
     {
-        public DateTime date;
+        public DateTime Date;
 
-        public string username;
+        public string Username;
 
-        public string message;
+        public string Message;
 
         public ChatMessage(string username, string message)
         {
-            this.username = username;
-            this.message = message;
-            this.date = new DateTime();
+            this.Username = username;
+            this.Message = message;
+            this.Date = new DateTime();
         }
 
         public ChatMessage(DateTime date, string username, string message)
         {
-            this.date = date;
-            this.username = username;
-            this.message = message;
+            this.Date = date;
+            this.Username = username;
+            this.Message = message;
         }
     }
 }

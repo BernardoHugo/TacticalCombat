@@ -7,8 +7,8 @@
     <ProjectGuid>{EB020BA8-77EC-44EA-A866-2641DBD21847}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MultiplayerLibrary</RootNamespace>
-    <AssemblyName>MultiplayerLibrary</AssemblyName>
+    <RootNamespace>Catchy</RootNamespace>
+    <AssemblyName>Catchy</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,15 +42,20 @@
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Multiplayer\Chat\Client\ChatClientHandler.cs" />
     <Compile Include="Multiplayer\Chat\Common\ChatMessage.cs" />
+    <Compile Include="Multiplayer\Chat\Component\ChatComponent.cs" />
     <Compile Include="Multiplayer\Chat\Server\ChatServerHandler.cs" />
     <Compile Include="Multiplayer\Common\DataState.cs" />
     <Compile Include="Multiplayer\Common\IMessageObserver.cs" />
     <Compile Include="Multiplayer\Common\SerializableVector3.cs" />
     <Compile Include="Multiplayer\Common\ServerMessage.cs" />
+    <Compile Include="Multiplayer\Component\ClientComponent.cs" />
     <Compile Include="Multiplayer\GameClient\Client.cs" />
     <Compile Include="Multiplayer\GameClient\TcpConnection.cs" />
     <Compile Include="Multiplayer\GameServer\Client.cs" />

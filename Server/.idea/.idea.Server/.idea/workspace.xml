@@ -2,55 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6c27223-e573-4a80-81c9-58d23fb13ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/ITransformObserver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Teste.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/.idea/.idea.GameClient/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/.idea/.idea.GameClient/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/.idea/.idea.GameClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/.idea/.idea.GameClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GameClient/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/Chat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/Chat/ChatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/Chat/ChatHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/Chat/ChatMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/Chat/ChatMessage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/DataState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/DataState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/DataState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/DataState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/DataState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/ServerMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Common/ServerMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/ChatComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/MinionComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Component/MinionComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/Client.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/Client.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Client.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/SerializableTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/SerializableTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/TransformMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Movement/Common/TransformMessage.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GameClient/GameClient.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/GameClient.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameClient/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../GameClient/obj/Debug/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/Common/Chat/ChatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/Common/Chat/ChatMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/Common/ServerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/GameServer/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/GameServer/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/GameServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Multiplayer/GameServer/TcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/Catchy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/Catchy.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/Catchy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/Catchy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Catchy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Catchy.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Catchy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Catchy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/Server.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Server.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/MultiplayerLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/MultiplayerLibrary.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiplayerLibrary/obj/Debug/MultiplayerLibrary.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MultiplayerLibrary/obj/Debug/MultiplayerLibrary.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,64 +81,99 @@
     <session id="-1615509267">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="29" />
+          <entry key="cs" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="29" />
+          <entry key="C#" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="191" />
+          <entry key="cs" value="333" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="191" />
+          <entry key="C#" value="333" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <marker date="1537645696107" expanded="false" signature="6:170" ph="..." />
-                <marker date="1537645696107" expanded="true" signature="205:1210" ph="{...}" />
-                <marker date="1537645696107" expanded="true" signature="255:1208" ph="{...}" />
-                <marker date="1537645696107" expanded="true" signature="463:588" ph="{...}" />
-                <marker date="1537645696107" expanded="true" signature="640:875" ph="{...}" />
-                <marker date="1537645696107" expanded="true" signature="785:865" ph="{...}" />
-                <marker date="1537645696107" expanded="true" signature="945:1202" ph="{...}" />
+                <marker date="1537711944249" expanded="false" signature="6:133" ph="..." />
+                <marker date="1537711944249" expanded="true" signature="175:1214" ph="{...}" />
+                <marker date="1537711944249" expanded="true" signature="231:1212" ph="{...}" />
+                <marker date="1537711944249" expanded="true" signature="467:592" ph="{...}" />
+                <marker date="1537711944249" expanded="true" signature="644:879" ph="{...}" />
+                <marker date="1537711944249" expanded="true" signature="789:869" ph="{...}" />
+                <marker date="1537711944249" expanded="true" signature="949:1206" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="234">
+              <caret line="23" column="84" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
               <folding>
-                <marker date="1537644979841" expanded="false" signature="6:50" ph="..." />
-                <marker date="1537644979841" expanded="true" signature="72:266" ph="{...}" />
-                <marker date="1537644979841" expanded="true" signature="92:264" ph="{...}" />
-                <marker date="1537644979841" expanded="true" signature="138:258" ph="{...}" />
-                <marker date="1537644979841" expanded="true" signature="220:248" ph="{...}" />
+                <marker date="1537711143993" expanded="false" signature="6:170" ph="..." />
+                <marker date="1537711143993" expanded="true" signature="205:923" ph="{...}" />
+                <marker date="1537711143993" expanded="true" signature="254:921" ph="{...}" />
+                <marker date="1537711143993" expanded="true" signature="408:533" ph="{...}" />
+                <marker date="1537711143993" expanded="true" signature="585:915" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+              <folding>
+                <marker date="1537711919077" expanded="true" signature="6:116" ph="..." />
+                <marker date="1537711919077" expanded="true" signature="161:1326" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="210:1324" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="550:633" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="663:826" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="895:1016" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="1070:1318" ph="{...}" />
+                <marker date="1537711919077" expanded="true" signature="1166:1308" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <marker date="1537712345233" expanded="true" signature="6:88" ph="..." />
+                <marker date="1537712345233" expanded="true" signature="128:436" ph="{...}" />
+                <marker date="1537712345233" expanded="true" signature="179:434" ph="{...}" />
+                <marker date="1537712345233" expanded="true" signature="350:428" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -128,29 +182,89 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding>
-                <marker date="1537645605207" expanded="false" signature="6:216" ph="..." />
-                <marker date="1537645605207" expanded="true" signature="257:3902" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="283:3900" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="641:1008" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="1051:1133" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="1191:1469" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="1530:1662" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="1722:2160" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="1887:1995" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2012:2150" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2254:2620" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2324:2420" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2437:2610" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2719:2900" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="2795:2890" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="3013:3168" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="3067:3158" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="3268:3894" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="3326:3378" ph="{...}" />
-                <marker date="1537645605207" expanded="true" signature="3486:3883" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="6:216" ph="..." />
+                <marker date="1537711229672" expanded="true" signature="257:3922" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="283:3920" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="644:1015" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="1058:1140" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="1198:1480" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="1541:1675" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="1735:2175" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="1901:2010" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2027:2165" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2269:2637" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2340:2437" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2454:2627" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2736:2918" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="2813:2908" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="3031:3186" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="3085:3176" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="3286:3914" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="3345:3397" ph="{...}" />
+                <marker date="1537711229672" expanded="true" signature="3506:3903" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-36">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+              <folding>
+                <marker date="1537711144002" expanded="false" signature="6:157" ph="..." />
+                <marker date="1537711144002" expanded="true" signature="203:1578" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="264:1576" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="519:574" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="626:944" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="810:934" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="1032:1198" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="1096:1188" ph="{...}" />
+                <marker date="1537711144002" expanded="true" signature="1284:1570" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="41" column="68" lean-forward="true" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+              <folding>
+                <marker date="1537712978761" expanded="false" signature="6:148" ph="..." />
+                <marker date="1537712978761" expanded="true" signature="189:3017" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="215:3015" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="531:920" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="951:1639" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="1068:1615" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="1223:1356" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="1381:1544" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="1699:1935" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2029:2398" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2100:2197" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2214:2388" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2485:2887" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2808:2877" ph="{...}" />
+                <marker date="1537712978761" expanded="true" signature="2940:3009" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <marker date="1537711144000" expanded="true" signature="66:385" ph="{...}" />
+                <marker date="1537711144000" expanded="true" signature="88:383" ph="{...}" />
+                <marker date="1537711144000" expanded="true" signature="287:377" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -162,22 +276,22 @@
             <state relative-caret-position="75">
               <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
-                <marker date="1536333295384" expanded="false" signature="6:76" ph="..." />
-                <marker date="1536333295384" expanded="true" signature="117:3282" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="139:3280" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="327:1109" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="720:817" ph="/* Bind the socket to the local endpoint and ... */" />
-                <marker date="1536333295384" expanded="true" signature="833:990" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="1022:1099" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="1166:1389" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="1450:1780" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="1616:1686" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="1838:2338" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="2404:3273" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="2674:2996" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="2897:2981" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="3013:3263" ph="{...}" />
-                <marker date="1536333295384" expanded="true" signature="3164:3249" ph="{...}" />
+                <marker date="1537711229647" expanded="false" signature="6:76" ph="..." />
+                <marker date="1537711229647" expanded="true" signature="117:3282" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="139:3280" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="327:1109" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="720:817" ph="/* Bind the socket to the local endpoint and ... */" />
+                <marker date="1537711229647" expanded="true" signature="833:990" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="1022:1099" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="1166:1389" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="1450:1780" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="1616:1686" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="1838:2338" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="2404:3273" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="2674:2996" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="2897:2981" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="3013:3263" ph="{...}" />
+                <marker date="1537711229647" expanded="true" signature="3164:3249" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -186,119 +300,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="120">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <marker date="1537643954597" expanded="false" signature="6:57" ph="..." />
-                <marker date="1537643954597" expanded="true" signature="98:1257" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="124:1255" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="296:368" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="428:756" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="488:550" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="605:667" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="684:746" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="802:1249" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="869:933" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="995:1060" ph="{...}" />
-                <marker date="1537643954597" expanded="true" signature="1077:1239" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding>
-                <marker date="1537645647107" expanded="true" signature="66:387" ph="{...}" />
-                <marker date="1537645647107" expanded="true" signature="88:385" ph="{...}" />
-                <marker date="1537645647107" expanded="true" signature="289:379" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <marker date="1537643750328" expanded="true" signature="62:390" ph="{...}" />
-                <marker date="1537643750328" expanded="true" signature="91:388" ph="{...}" />
-                <marker date="1537643750328" expanded="true" signature="292:382" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <marker date="1537629259392" expanded="false" signature="6:148" ph="..." />
-                <marker date="1537629259392" expanded="true" signature="189:2996" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="215:2994" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="527:910" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="941:1623" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="1056:1599" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="1209:1341" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="1366:1529" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="1683:1917" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2011:2378" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2081:2177" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2194:2368" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2465:2867" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2788:2857" ph="{...}" />
-                <marker date="1537629259392" expanded="true" signature="2920:2988" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding>
-                <marker date="1537645634428" expanded="false" signature="6:109" ph="..." />
-                <marker date="1537645634428" expanded="true" signature="150:3345" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="176:3343" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="314:1570" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="340:1451" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="694:951" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="1001:1123" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="1166:1281" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="1317:1436" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="1483:1560" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="1628:2128" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="2194:2929" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="2464:2786" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="2687:2771" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="2803:2919" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="2968:3103" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="3149:3337" ph="{...}" />
-                <marker date="1537645634428" expanded="true" signature="3193:3327" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding>
-                <marker date="1537628667802" expanded="true" signature="55:591" ph="{...}" />
-                <marker date="1537628667802" expanded="true" signature="87:589" ph="{...}" />
-                <marker date="1537628667802" expanded="true" signature="249:383" ph="{...}" />
-                <marker date="1537628667802" expanded="true" signature="459:583" ph="{...}" />
+                <marker date="1537711229688" expanded="false" signature="6:57" ph="..." />
+                <marker date="1537711229688" expanded="true" signature="98:1257" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="124:1255" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="296:368" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="428:756" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="488:550" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="605:667" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="684:746" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="802:1249" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="869:933" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="995:1060" ph="{...}" />
+                <marker date="1537711229688" expanded="true" signature="1077:1239" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -312,16 +328,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/ITransformObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../GameClient/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -341,15 +361,19 @@
         <option value="$PROJECT_DIR$/ConsoleApp1/Multiplayer/GameClient/TcpConnection.cs" />
         <option value="$PROJECT_DIR$/ConsoleApp1/Multiplayer/Movement/Client/TransformClientHandler.cs" />
         <option value="$PROJECT_DIR$/MultiplayerLibrary/MonoBehaviour1.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Teste.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" />
         <option value="$PROJECT_DIR$/ConsoleApp1/Program.cs" />
         <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Teste.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" />
         <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" />
-        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs" />
+        <option value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs" />
       </list>
     </option>
   </component>
@@ -371,7 +395,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -388,7 +411,41 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
               <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Assemblies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Multiplayer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Multiplayer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Component" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Multiplayer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GameClient" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MultiplayerLibrary" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Multiplayer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GameServer" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -400,13 +457,14 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer" />
+    <property name="last_opened_file_path" value="C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -467,12 +525,13 @@
       <updated>1537586010702</updated>
       <workItem from="1537586012230" duration="603000" />
       <workItem from="1537627892328" duration="3963000" />
-      <workItem from="1537645422407" duration="271000" />
+      <workItem from="1537645422407" duration="935000" />
+      <workItem from="1537710331550" duration="3384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4837000" />
+    <option name="totallyTimeSpent" value="8885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,12 +544,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-21" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36384267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2322239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.3295082" />
+      <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49924356" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.3295082" />
@@ -504,7 +562,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50075644" side_tool="true" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,28 +586,24 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs</url>
+          <line>10</line>
+          <properties documentPath="$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" initialLine="10">
+            <startOffsets>
+              <option value="232" />
+            </startOffsets>
+            <endOffsets>
+              <option value="249" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ConsoleApp1/Multiplayer/Movement/Client/TransformHandler.cs" />
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/MonoBehaviour1.cs" />
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Teste.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,36 +612,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <marker date="1537643715969" expanded="false" signature="6:170" ph="..." />
-            <marker date="1537643715969" expanded="true" signature="205:923" ph="{...}" />
-            <marker date="1537643715969" expanded="true" signature="254:921" ph="{...}" />
-            <marker date="1537643715969" expanded="true" signature="408:533" ph="{...}" />
-            <marker date="1537643715969" expanded="true" signature="585:915" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Properties/AssemblyInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1537643643696" expanded="false" signature="6:62" ph="..." />
-            <marker date="1537643643696" expanded="true" signature="64:251" ph="/* General Information about an assembly is controlled through the following ... */" />
-            <marker date="1537643643696" expanded="true" signature="574:784" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-            <marker date="1537643643696" expanded="true" signature="959:1286" ph="/* Version information for an assembly consists of the following four values: ... */" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs">
+    <entry file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <marker date="1537710396986" expanded="false" signature="6:50" ph="..." />
+            <marker date="1537710396986" expanded="true" signature="72:267" ph="{...}" />
+            <marker date="1537710396986" expanded="true" signature="92:265" ph="{...}" />
+            <marker date="1537710396986" expanded="true" signature="138:259" ph="{...}" />
+            <marker date="1537710396986" expanded="true" signature="220:248" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -596,111 +634,137 @@
         <state relative-caret-position="30">
           <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding>
-            <marker date="1537628667802" expanded="true" signature="55:591" ph="{...}" />
-            <marker date="1537628667802" expanded="true" signature="87:589" ph="{...}" />
-            <marker date="1537628667802" expanded="true" signature="249:383" ph="{...}" />
-            <marker date="1537628667802" expanded="true" signature="459:583" ph="{...}" />
+            <marker date="1537711143990" expanded="true" signature="55:591" ph="{...}" />
+            <marker date="1537711143990" expanded="true" signature="87:589" ph="{...}" />
+            <marker date="1537711143990" expanded="true" signature="249:383" ph="{...}" />
+            <marker date="1537711143990" expanded="true" signature="459:583" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs">
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <marker date="1537711143998" expanded="true" signature="62:388" ph="{...}" />
+            <marker date="1537711143998" expanded="true" signature="91:386" ph="{...}" />
+            <marker date="1537711143998" expanded="true" signature="290:380" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1537629278495" expanded="true" signature="35:134" ph="{...}" />
+            <marker date="1537629278495" expanded="true" signature="75:132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <marker date="1537711191162" expanded="true" signature="83:467" ph="{...}" />
+            <marker date="1537711191162" expanded="true" signature="142:465" ph="{...}" />
+            <marker date="1537711191162" expanded="true" signature="367:459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <marker date="1537643954597" expanded="false" signature="6:57" ph="..." />
-            <marker date="1537643954597" expanded="true" signature="98:1257" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="124:1255" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="296:368" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="428:756" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="488:550" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="605:667" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="684:746" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="802:1249" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="869:933" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="995:1060" ph="{...}" />
-            <marker date="1537643954597" expanded="true" signature="1077:1239" ph="{...}" />
+            <marker date="1537711213218" expanded="true" signature="35:267" ph="{...}" />
+            <marker date="1537711213218" expanded="true" signature="61:265" ph="{...}" />
+            <marker date="1537711213218" expanded="true" signature="179:259" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
-            <marker date="1537645634428" expanded="false" signature="6:109" ph="..." />
-            <marker date="1537645634428" expanded="true" signature="150:3345" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="176:3343" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="314:1570" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="340:1451" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="694:951" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="1001:1123" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="1166:1281" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="1317:1436" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="1483:1560" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="1628:2128" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="2194:2929" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="2464:2786" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="2687:2771" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="2803:2919" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="2968:3103" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="3149:3337" ph="{...}" />
-            <marker date="1537645634428" expanded="true" signature="3193:3327" ph="{...}" />
+            <marker date="1537711224659" expanded="false" signature="6:109" ph="..." />
+            <marker date="1537711224659" expanded="true" signature="150:3354" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="176:3352" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="315:1575" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="341:1456" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="696:956" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="1006:1128" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="1171:1286" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="1322:1441" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="1488:1565" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="1633:2133" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="2199:2934" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="2469:2791" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="2692:2776" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="2808:2924" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="2973:3110" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="3156:3346" ph="{...}" />
+            <marker date="1537711224659" expanded="true" signature="3201:3336" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs">
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
-            <marker date="1537629259392" expanded="false" signature="6:148" ph="..." />
-            <marker date="1537629259392" expanded="true" signature="189:2996" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="215:2994" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="527:910" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="941:1623" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="1056:1599" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="1209:1341" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="1366:1529" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="1683:1917" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2011:2378" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2081:2177" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2194:2368" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2465:2867" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2788:2857" ph="{...}" />
-            <marker date="1537629259392" expanded="true" signature="2920:2988" ph="{...}" />
+            <marker date="1537711144006" expanded="true" signature="78:361" ph="{...}" />
+            <marker date="1537711144006" expanded="true" signature="115:359" ph="{...}" />
+            <marker date="1537711144006" expanded="true" signature="267:353" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs">
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/ITransformObserver.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <marker date="1537645605207" expanded="false" signature="6:216" ph="..." />
-            <marker date="1537645605207" expanded="true" signature="257:3902" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="283:3900" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="641:1008" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="1051:1133" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="1191:1469" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="1530:1662" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="1722:2160" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="1887:1995" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2012:2150" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2254:2620" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2324:2420" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2437:2610" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2719:2900" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="2795:2890" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="3013:3168" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="3067:3158" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="3268:3894" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="3326:3378" ph="{...}" />
-            <marker date="1537645605207" expanded="true" signature="3486:3883" ph="{...}" />
+            <marker date="1537628914299" expanded="true" signature="44:169" ph="{...}" />
+            <marker date="1537628914299" expanded="true" signature="86:167" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <marker date="1537711159293" expanded="true" signature="6:79" ph="..." />
+            <marker date="1537711159293" expanded="true" signature="125:291" ph="{...}" />
+            <marker date="1537711159293" expanded="true" signature="186:289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <marker date="1537711144002" expanded="false" signature="6:157" ph="..." />
+            <marker date="1537711144002" expanded="true" signature="203:1578" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="264:1576" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="519:574" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="626:944" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="810:934" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="1032:1198" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="1096:1188" ph="{...}" />
+            <marker date="1537711144002" expanded="true" signature="1284:1570" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -710,22 +774,22 @@
         <state relative-caret-position="75">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <marker date="1536333295384" expanded="false" signature="6:76" ph="..." />
-            <marker date="1536333295384" expanded="true" signature="117:3282" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="139:3280" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="327:1109" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="720:817" ph="/* Bind the socket to the local endpoint and ... */" />
-            <marker date="1536333295384" expanded="true" signature="833:990" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="1022:1099" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="1166:1389" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="1450:1780" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="1616:1686" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="1838:2338" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="2404:3273" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="2674:2996" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="2897:2981" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="3013:3263" ph="{...}" />
-            <marker date="1536333295384" expanded="true" signature="3164:3249" ph="{...}" />
+            <marker date="1537711229647" expanded="false" signature="6:76" ph="..." />
+            <marker date="1537711229647" expanded="true" signature="117:3282" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="139:3280" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="327:1109" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="720:817" ph="/* Bind the socket to the local endpoint and ... */" />
+            <marker date="1537711229647" expanded="true" signature="833:990" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="1022:1099" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="1166:1389" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="1450:1780" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="1616:1686" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="1838:2338" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="2404:3273" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="2674:2996" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="2897:2981" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="3013:3263" ph="{...}" />
+            <marker date="1537711229647" expanded="true" signature="3164:3249" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -733,53 +797,145 @@
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
-            <marker date="1537645647107" expanded="true" signature="66:387" ph="{...}" />
-            <marker date="1537645647107" expanded="true" signature="88:385" ph="{...}" />
-            <marker date="1537645647107" expanded="true" signature="289:379" ph="{...}" />
+            <marker date="1537711144000" expanded="true" signature="66:385" ph="{...}" />
+            <marker date="1537711144000" expanded="true" signature="88:383" ph="{...}" />
+            <marker date="1537711144000" expanded="true" signature="287:377" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Common/DataState.cs">
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Client.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <marker date="1537643750328" expanded="true" signature="62:390" ph="{...}" />
-            <marker date="1537643750328" expanded="true" signature="91:388" ph="{...}" />
-            <marker date="1537643750328" expanded="true" signature="292:382" ph="{...}" />
+            <marker date="1537711229688" expanded="false" signature="6:57" ph="..." />
+            <marker date="1537711229688" expanded="true" signature="98:1257" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="124:1255" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="296:368" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="428:756" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="488:550" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="605:667" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="684:746" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="802:1249" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="869:933" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="995:1060" ph="{...}" />
+            <marker date="1537711229688" expanded="true" signature="1077:1239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="84" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
+          <folding>
+            <marker date="1537711143993" expanded="false" signature="6:170" ph="..." />
+            <marker date="1537711143993" expanded="true" signature="205:923" ph="{...}" />
+            <marker date="1537711143993" expanded="true" signature="254:921" ph="{...}" />
+            <marker date="1537711143993" expanded="true" signature="408:533" ph="{...}" />
+            <marker date="1537711143993" expanded="true" signature="585:915" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <marker date="1537645696107" expanded="false" signature="6:170" ph="..." />
-            <marker date="1537645696107" expanded="true" signature="205:1210" ph="{...}" />
-            <marker date="1537645696107" expanded="true" signature="255:1208" ph="{...}" />
-            <marker date="1537645696107" expanded="true" signature="463:588" ph="{...}" />
-            <marker date="1537645696107" expanded="true" signature="640:875" ph="{...}" />
-            <marker date="1537645696107" expanded="true" signature="785:865" ph="{...}" />
-            <marker date="1537645696107" expanded="true" signature="945:1202" ph="{...}" />
+            <marker date="1537711944249" expanded="false" signature="6:133" ph="..." />
+            <marker date="1537711944249" expanded="true" signature="175:1214" ph="{...}" />
+            <marker date="1537711944249" expanded="true" signature="231:1212" ph="{...}" />
+            <marker date="1537711944249" expanded="true" signature="467:592" ph="{...}" />
+            <marker date="1537711944249" expanded="true" signature="644:879" ph="{...}" />
+            <marker date="1537711944249" expanded="true" signature="789:869" ph="{...}" />
+            <marker date="1537711944249" expanded="true" signature="949:1206" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs">
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
           <folding>
-            <marker date="1537644979841" expanded="false" signature="6:50" ph="..." />
-            <marker date="1537644979841" expanded="true" signature="72:266" ph="{...}" />
-            <marker date="1537644979841" expanded="true" signature="92:264" ph="{...}" />
-            <marker date="1537644979841" expanded="true" signature="138:258" ph="{...}" />
-            <marker date="1537644979841" expanded="true" signature="220:248" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="6:116" ph="..." />
+            <marker date="1537711919077" expanded="true" signature="161:1326" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="210:1324" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="550:633" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="663:826" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="895:1016" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="1070:1318" ph="{...}" />
+            <marker date="1537711919077" expanded="true" signature="1166:1308" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameServer/Server.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <marker date="1537711229672" expanded="true" signature="6:216" ph="..." />
+            <marker date="1537711229672" expanded="true" signature="257:3922" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="283:3920" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="644:1015" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="1058:1140" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="1198:1480" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="1541:1675" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="1735:2175" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="1901:2010" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2027:2165" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2269:2637" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2340:2437" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2454:2627" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2736:2918" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="2813:2908" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="3031:3186" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="3085:3176" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="3286:3914" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="3345:3397" ph="{...}" />
+            <marker date="1537711229672" expanded="true" signature="3506:3903" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <marker date="1537712345233" expanded="true" signature="6:88" ph="..." />
+            <marker date="1537712345233" expanded="true" signature="128:436" ph="{...}" />
+            <marker date="1537712345233" expanded="true" signature="179:434" ph="{...}" />
+            <marker date="1537712345233" expanded="true" signature="350:428" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiplayerLibrary/Multiplayer/GameClient/Client.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" column="68" lean-forward="true" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+          <folding>
+            <marker date="1537712978761" expanded="false" signature="6:148" ph="..." />
+            <marker date="1537712978761" expanded="true" signature="189:3017" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="215:3015" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="531:920" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="951:1639" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="1068:1615" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="1223:1356" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="1381:1544" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="1699:1935" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2029:2398" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2100:2197" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2214:2388" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2485:2887" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2808:2877" ph="{...}" />
+            <marker date="1537712978761" expanded="true" signature="2940:3009" ph="{...}" />
           </folding>
         </state>
       </provider>

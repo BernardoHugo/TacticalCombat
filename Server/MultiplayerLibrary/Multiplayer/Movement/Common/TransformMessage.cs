@@ -4,14 +4,14 @@ namespace Catchy.Multiplayer.Movement.Common
 {
     public struct TransformMessage
     {
-        public int id;
+        public int Id;
 
-        public SerializableTransform transform;
+        public SerializableTransform Transform;
 
         public TransformMessage(int id, SerializableTransform transform)
         {
-            this.id = id;
-            this.transform = transform;
+            this.Id = id;
+            this.Transform = transform;
         }
     }
 }

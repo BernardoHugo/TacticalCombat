@@ -1,13 +1,14 @@
 using System;
 using Catchy.Multiplayer.Common;
+using UnityEngine.Serialization;
 
 namespace Catchy.Multiplayer.Movement.Common
 {
     [Serializable]
     public struct SerializableTransform
     {
-        private SerializableVector3 position;
+        public SerializableVector3 Position;
 
-        private SerializableVector3 rotation;
+        public SerializableVector3 Rotation;
     }
 }

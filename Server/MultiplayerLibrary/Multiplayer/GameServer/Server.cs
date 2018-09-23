@@ -12,25 +12,25 @@ namespace Catchy.Multiplayer.GameServer
 {
     public class Server
     {
-        private Dictionary<int, Client> clients = new Dictionary<int, Client>();
-        private Dictionary<string, IMessageObserver> messageObservers;
+        private Dictionary<int, Client> _clients = new Dictionary<int, Client>();
+        private Dictionary<string, IMessageObserver> _messageObservers;
 
-        private int lastClientID;
+        private int _lastClientId;
 
-        private TcpServer tcpServer;
+        private TcpServer _tcpServer;
 
         private ChatServerHandler _chatServerHandler;
 
-        private const int SERVER_PORT = 5050;
+        private const int ServerPort = 5050;
 
         public Server()
         {
-            messageObservers = new Dictionary<string, IMessageObserver>();
+            _messageObservers = new Dictionary<string, IMessageObserver>();
 
-            tcpServer = new TcpServer(SERVER_PORT);
-            tcpServer.OnMessageReceived += OnMessageReceived;
-            tcpServer.OnClientConnect += OnClientConnect;
-            tcpServer.OnClientDisconnect += OnClientDisconnect;
+            _tcpServer = new TcpServer(ServerPort);
+            _tcpServer.OnMessageReceived += OnMessageReceived;
+            _tcpServer.OnClientConnect += OnClientConnect;
+            _tcpServer.OnClientDisconnect += OnClientDisconnect;
 
             InitializeHandlers();
         }
@@ -43,37 +43,37 @@ namespace Catchy.Multiplayer.GameServer
         public void OnClientConnect(Socket clientSocket)
         {
             IPEndPoint iP = clientSocket.RemoteEndPoint as IPEndPoint;
-            lastClientID++;
+            _lastClientId++;
 
-            Client newClient = new Client(lastClientID, iP);
+            Client newClient = new Client(_lastClientId, iP);
             newClient.SetSocket(clientSocket);
-            clients.Add(lastClientID, newClient);
+            _clients.Add(_lastClientId, newClient);
         }
 
         public void OnClientDisconnect(Socket clientSocket)
         {
-            int id = clients.First(x => x.Value.tcpSocket == clientSocket).Key;
-            clients.Remove(id);
+            int id = _clients.First(x => x.Value.TcpSocket == clientSocket).Key;
+            _clients.Remove(id);
         }
 
         private void OnMessageReceived(string messageJson)
         {
             ServerMessage message = JsonConvert.DeserializeObject<ServerMessage>(messageJson);
-            if (messageObservers.ContainsKey(message.name))
+            if (_messageObservers.ContainsKey(message.Name))
             {
-                messageObservers[message.name].OnMessageReceived(message.data);
+                _messageObservers[message.Name].OnMessageReceived(message.Data);
             }
             else
             {
-                Console.WriteLine($"[GameServer] OnMessageReceived: No observer for {message.name} message");
+                Console.WriteLine($"[GameServer] OnMessageReceived: No observer for {message.Name} message");
             }
         }
 
         public void AddMessageObserver(string messageName, IMessageObserver messageObserver)
         {
-            if (!messageObservers.ContainsKey(messageName))
+            if (!_messageObservers.ContainsKey(messageName))
             {
-                messageObservers.Add(messageName, messageObserver);
+                _messageObservers.Add(messageName, messageObserver);
             }
             else
             {
@@ -83,7 +83,7 @@ namespace Catchy.Multiplayer.GameServer
 
         public void SendMessageForAllClients(ProtocolType protocolType, string name, string data)
         {
-            foreach (KeyValuePair<int, Client> client in clients)
+            foreach (KeyValuePair<int, Client> client in _clients)
             {
                 SendMessage(client.Key, protocolType, name, data);
             }
@@ -99,12 +99,12 @@ namespace Catchy.Multiplayer.GameServer
 
         public void SendMessage(int targetId, ProtocolType protocolType, string name, string data)
         {
-            if (!clients.ContainsKey(targetId))
+            if (!_clients.ContainsKey(targetId))
             {
                 return;
             }
 
-            Socket handler = clients[targetId].GetSocket(protocolType);
+            Socket handler = _clients[targetId].GetSocket(protocolType);
             if (handler.Connected)
             {
                 ServerMessage message = new ServerMessage(name, data);

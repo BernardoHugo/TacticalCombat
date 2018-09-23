@@ -2,55 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0094ceb-9fc2-4e5e-9901-d7610ebb18af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/DataState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/ITransformObserver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Teste.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Component/ChatComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Component/ClientComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameClient/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameClient/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/Chat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/Chat/ChatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/Chat/ChatHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/Chat/ChatMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/Chat/ChatMessage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DataState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/MinionComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/MinionComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/SerializableTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/SerializableTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/TransformMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/TransformMessage.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GameClient.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GameClient.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/Common/Chat/ChatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/Common/Chat/ChatMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/Common/IMessageObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/IMessageObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/Common/ServerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/GameServer/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/GameServer/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/GameServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Multiplayer/GameServer/TcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/bin/Debug/Catchy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/bin/Debug/Catchy.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/bin/Debug/Catchy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/bin/Debug/Catchy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Catchy.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Catchy.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Catchy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Catchy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Debug/Server.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/Server.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/.idea.Server/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/.idea.Server/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Release/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ConsoleApp1/obj/Release/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Client/ChatClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Common/ChatMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Chat/Server/ChatServerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/DataState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/SerializableVector3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Common/ServerMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameClient/TcpConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/DataState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/GameServer/TcpServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Client/TransformClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/SerializableTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/Multiplayer/Movement/Common/TransformMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/MultiplayerLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/MultiplayerLibrary.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/MultiplayerLibrary/obj/Debug/MultiplayerLibrary.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/MultiplayerLibrary/obj/Debug/MultiplayerLibrary.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,23 +81,24 @@
     <session id="-1023322031">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="14" />
+          <entry key="cs" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="14" />
+          <entry key="C#" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -94,201 +114,10 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <marker date="1537643750273" expanded="true" signature="6:157" ph="..." />
-                <marker date="1537643750273" expanded="true" signature="203:1572" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="264:1570" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="518:572" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="624:940" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="807:930" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="1028:1192" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="1091:1182" ph="{...}" />
-                <marker date="1537643750273" expanded="true" signature="1278:1564" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-              <folding>
-                <marker date="1537643750548" expanded="true" signature="6:128" ph="..." />
-                <marker date="1537643750548" expanded="true" signature="169:3355" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="202:3353" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="340:1580" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="366:1469" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="720:975" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="1025:1145" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="1188:1301" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="1337:1454" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="1501:1570" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="1638:2138" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="2204:2939" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="2474:2796" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="2697:2781" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="2813:2929" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="2978:3113" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="3159:3347" ph="{...}" />
-                <marker date="1537643750548" expanded="true" signature="3203:3337" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-              <folding>
-                <marker date="1537629440255" expanded="true" signature="62:390" ph="{...}" />
-                <marker date="1537629440255" expanded="true" signature="91:388" ph="{...}" />
-                <marker date="1537629440255" expanded="true" signature="292:382" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1537643750493" expanded="true" signature="6:167" ph="..." />
-                <marker date="1537643750493" expanded="true" signature="208:2953" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="250:2951" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="577:867" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="898:1580" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="1013:1556" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="1166:1298" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="1323:1486" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="1640:1874" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="1968:2335" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="2038:2134" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="2151:2325" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="2422:2824" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="2745:2814" ph="{...}" />
-                <marker date="1537643750493" expanded="true" signature="2877:2945" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
-              <folding>
-                <marker date="1537587007470" expanded="true" signature="44:169" ph="{...}" />
-                <marker date="1537587007470" expanded="true" signature="86:167" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <marker date="1537626944415" expanded="true" signature="50:350" ph="{...}" />
-                <marker date="1537626944415" expanded="true" signature="109:348" ph="{...}" />
-                <marker date="1537626944415" expanded="true" signature="250:342" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1536325172243" expanded="true" signature="35:267" ph="{...}" />
-                <marker date="1536325172243" expanded="true" signature="61:265" ph="{...}" />
-                <marker date="1536325172243" expanded="true" signature="179:259" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <marker date="1537643750384" expanded="true" signature="6:133" ph="..." />
-                <marker date="1537643750384" expanded="true" signature="175:1214" ph="{...}" />
-                <marker date="1537643750384" expanded="true" signature="231:1212" ph="{...}" />
-                <marker date="1537643750384" expanded="true" signature="467:592" ph="{...}" />
-                <marker date="1537643750384" expanded="true" signature="644:879" ph="{...}" />
-                <marker date="1537643750384" expanded="true" signature="789:869" ph="{...}" />
-                <marker date="1537643750384" expanded="true" signature="949:1206" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <marker date="1537643750595" expanded="true" signature="55:591" ph="{...}" />
-                <marker date="1537643750595" expanded="true" signature="87:589" ph="{...}" />
-                <marker date="1537643750595" expanded="true" signature="249:383" ph="{...}" />
-                <marker date="1537643750595" expanded="true" signature="459:583" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <marker date="1537643750424" expanded="true" signature="35:134" ph="{...}" />
-                <marker date="1537643750424" expanded="true" signature="75:132" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/TransformMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/TcpConnection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/SerializableTransform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/MinionComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -324,7 +153,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -347,84 +176,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Chat" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Chat" type="1045f7f1:UnityExplorerNode" />
-              <item name="Client" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Chat" type="1045f7f1:UnityExplorerNode" />
-              <item name="Common" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Common" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Component" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="GameClient" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Movement" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Movement" type="1045f7f1:UnityExplorerNode" />
-              <item name="Client" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Catchy" type="1045f7f1:UnityExplorerNode" />
-              <item name="Multiplayer" type="1045f7f1:UnityExplorerNode" />
-              <item name="Movement" type="1045f7f1:UnityExplorerNode" />
-              <item name="Common" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -483,11 +234,12 @@
       <workItem from="1537236284291" duration="343000" />
       <workItem from="1537585889540" duration="1101000" />
       <workItem from="1537618003943" duration="4183000" />
+      <workItem from="1537709523096" duration="2392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8036000" />
+    <option name="totallyTimeSpent" value="10428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +254,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -547,33 +299,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding>
-            <marker date="1537629085297" expanded="true" signature="6:198" ph="..." />
-            <marker date="1537629085297" expanded="true" signature="242:1217" ph="{...}" />
-            <marker date="1537629085297" expanded="true" signature="527:598" ph="{...}" />
-            <marker date="1537629085297" expanded="true" signature="624:771" ph="{...}" />
-            <marker date="1537629085297" expanded="true" signature="836:945" ph="{...}" />
-            <marker date="1537629085297" expanded="true" signature="995:1215" ph="{...}" />
-            <marker date="1537629085297" expanded="true" signature="1083:1209" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/MinionComponent.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <marker date="1537188199506" expanded="false" signature="6:171" ph="..." />
-            <marker date="1537188199506" expanded="true" signature="211:456" ph="{...}" />
-            <marker date="1537188199506" expanded="true" signature="262:454" ph="{...}" />
-            <marker date="1537188199506" expanded="true" signature="328:361" ph="{...}" />
-            <marker date="1537188199506" expanded="true" signature="427:448" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,11 +310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <marker date="1537626972130" expanded="true" signature="6:46" ph="..." />
-            <marker date="1537626972130" expanded="true" signature="92:260" ph="{...}" />
-            <marker date="1537626972130" expanded="true" signature="153:258" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,108 +317,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <marker date="1537627624933" expanded="true" signature="78:361" ph="{...}" />
-            <marker date="1537627624933" expanded="true" signature="115:359" ph="{...}" />
-            <marker date="1537627624933" expanded="true" signature="267:353" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-          <folding>
-            <marker date="1537587007470" expanded="true" signature="44:169" ph="{...}" />
-            <marker date="1537587007470" expanded="true" signature="86:167" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1537643750493" expanded="true" signature="6:167" ph="..." />
-            <marker date="1537643750493" expanded="true" signature="208:2953" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="250:2951" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="577:867" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="898:1580" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="1013:1556" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="1166:1298" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="1323:1486" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="1640:1874" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="1968:2335" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="2038:2134" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="2151:2325" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="2422:2824" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="2745:2814" ph="{...}" />
-            <marker date="1537643750493" expanded="true" signature="2877:2945" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <marker date="1537643750384" expanded="true" signature="6:133" ph="..." />
-            <marker date="1537643750384" expanded="true" signature="175:1214" ph="{...}" />
-            <marker date="1537643750384" expanded="true" signature="231:1212" ph="{...}" />
-            <marker date="1537643750384" expanded="true" signature="467:592" ph="{...}" />
-            <marker date="1537643750384" expanded="true" signature="644:879" ph="{...}" />
-            <marker date="1537643750384" expanded="true" signature="789:869" ph="{...}" />
-            <marker date="1537643750384" expanded="true" signature="949:1206" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <marker date="1537643750595" expanded="true" signature="55:591" ph="{...}" />
-            <marker date="1537643750595" expanded="true" signature="87:589" ph="{...}" />
-            <marker date="1537643750595" expanded="true" signature="249:383" ph="{...}" />
-            <marker date="1537643750595" expanded="true" signature="459:583" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1537626944415" expanded="true" signature="50:350" ph="{...}" />
-            <marker date="1537626944415" expanded="true" signature="109:348" ph="{...}" />
-            <marker date="1537626944415" expanded="true" signature="250:342" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1536325172243" expanded="true" signature="35:267" ph="{...}" />
-            <marker date="1536325172243" expanded="true" signature="61:265" ph="{...}" />
-            <marker date="1536325172243" expanded="true" signature="179:259" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1537643750424" expanded="true" signature="35:134" ph="{...}" />
-            <marker date="1537643750424" expanded="true" signature="75:132" ph="{...}" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -702,56 +331,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-          <folding>
-            <marker date="1537643750548" expanded="true" signature="6:128" ph="..." />
-            <marker date="1537643750548" expanded="true" signature="169:3355" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="202:3353" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="340:1580" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="366:1469" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="720:975" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="1025:1145" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="1188:1301" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="1337:1454" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="1501:1570" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="1638:2138" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="2204:2939" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="2474:2796" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="2697:2781" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="2813:2929" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="2978:3113" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="3159:3347" ph="{...}" />
-            <marker date="1537643750548" expanded="true" signature="3203:3337" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/DataState.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <marker date="1537629440255" expanded="true" signature="62:390" ph="{...}" />
-            <marker date="1537629440255" expanded="true" signature="91:388" ph="{...}" />
-            <marker date="1537629440255" expanded="true" signature="292:382" ph="{...}" />
-          </folding>
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Client/TransformClientHandler.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/GameClient/Client.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Movement/Common/ITransformObserver.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1537643750273" expanded="true" signature="6:157" ph="..." />
-            <marker date="1537643750273" expanded="true" signature="203:1572" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="264:1570" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="518:572" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="624:940" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="807:930" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="1028:1192" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="1091:1182" ph="{...}" />
-            <marker date="1537643750273" expanded="true" signature="1278:1564" ph="{...}" />
-          </folding>
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/SerializableVector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/ServerMessage.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Client/ChatClientHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Chat/Common/ChatMessage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Common/IMessageObserver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Catchy/Multiplayer/Component/ChatComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="8" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>

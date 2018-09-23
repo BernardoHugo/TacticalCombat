@@ -6,30 +6,30 @@ namespace Catchy.Multiplayer.GameServer
 {
     public class Client
     {
-        public Socket tcpSocket;
-        public Socket udpSocket;
-        public IPEndPoint iP;
-        public int id;
+        public Socket TcpSocket;
+        public Socket UdpSocket;
+        public IPEndPoint IP;
+        public int Id;
 
         public Client(int id, IPEndPoint iP )
         {
-            this.id = id;
-            this.iP = iP;
+            this.Id = id;
+            this.IP = iP;
         }
 
         public Socket GetSocket(ProtocolType protocolType)
         {
             if (protocolType == ProtocolType.Tcp)
             {
-                return tcpSocket;
+                return TcpSocket;
             }
             else if (protocolType == ProtocolType.Udp)
             {
-                return udpSocket;
+                return UdpSocket;
             }
             else
             {
-                return tcpSocket;
+                return TcpSocket;
             }
         }
 
@@ -37,11 +37,11 @@ namespace Catchy.Multiplayer.GameServer
         {
             if (socket.ProtocolType == ProtocolType.Tcp)
             {
-                tcpSocket = socket;
+                TcpSocket = socket;
             }
             else if (socket.ProtocolType == ProtocolType.Udp)
             {
-                 udpSocket = socket;
+                 UdpSocket = socket;
             }
             else
             {

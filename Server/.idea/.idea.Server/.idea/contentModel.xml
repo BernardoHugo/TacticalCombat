@@ -25,6 +25,9 @@
             <e p="Common" t="Include">
               <e p="ChatMessage.cs" t="Include" />
             </e>
+            <e p="Component" t="Include">
+              <e p="ChatComponent.cs" t="Include" />
+            </e>
             <e p="Server" t="Include">
               <e p="ChatServerHandler.cs" t="Include" />
             </e>
@@ -34,6 +37,9 @@
             <e p="IMessageObserver.cs" t="Include" />
             <e p="SerializableVector3.cs" t="Include" />
             <e p="ServerMessage.cs" t="Include" />
+          </e>
+          <e p="Component" t="Include">
+            <e p="ClientComponent.cs" t="Include" />
           </e>
           <e p="GameClient" t="Include">
             <e p="Client.cs" t="Include" />

@@ -9,22 +9,22 @@ namespace Catchy.Multiplayer.Chat
 {
     class ChatServerHandler : IMessageObserver
     {
-        private Server gameServer;
+        private Server _gameServer;
 
-        private const string CHAT_MESSAGE = "chatMessage";
+        private const string ChatMessage = "chatMessage";
 
         public ChatServerHandler(Server gameServer)
         {
-            this.gameServer = gameServer;
-            gameServer.AddMessageObserver(CHAT_MESSAGE, this);
+            this._gameServer = gameServer;
+            gameServer.AddMessageObserver(ChatMessage, this);
         }
 
         public void OnMessageReceived(string data)
         {
             ChatMessage chatMessage = JsonConvert.DeserializeObject<ChatMessage>(data);
-            chatMessage.date = DateTime.Now;
+            chatMessage.Date = DateTime.Now;
             string chatMessageJson = JsonConvert.SerializeObject(chatMessage);
-            gameServer.SendMessageForAllClients(ProtocolType.Tcp, CHAT_MESSAGE, chatMessageJson);
+            _gameServer.SendMessageForAllClients(ProtocolType.Tcp, ChatMessage, chatMessageJson);
         }
     }
 }

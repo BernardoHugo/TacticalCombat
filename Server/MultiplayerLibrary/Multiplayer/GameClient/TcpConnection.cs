@@ -8,7 +8,7 @@ namespace Catchy.Multiplayer.GameClient
 {
     class TcpConnection
     {
-        private Socket sender;
+        private Socket _sender;
 
         public Action<string> OnMessageReceived;
 
@@ -18,19 +18,19 @@ namespace Catchy.Multiplayer.GameClient
             {
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(ip);
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
-                IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
+                IPEndPoint remoteEp = new IPEndPoint(ipAddress, port);
 
-                sender = new Socket(ipAddress.AddressFamily,
+                _sender = new Socket(ipAddress.AddressFamily,
                     SocketType.Stream, ProtocolType.Tcp);
 
                 try
                 {
-                    sender.Connect(remoteEP);
+                    _sender.Connect(remoteEp);
 
                     Console.WriteLine("Socket connected to {0}",
-                        sender.RemoteEndPoint.ToString());
+                        _sender.RemoteEndPoint.ToString());
 
-                    StartReceiveMessage(sender);
+                    StartReceiveMessage(_sender);
                 }
                 catch (ArgumentNullException ane)
                 {
@@ -68,8 +68,8 @@ namespace Catchy.Multiplayer.GameClient
         private void EndReceiveMessage(IAsyncResult asyncResult)
         {
             DataState dataState = (DataState)asyncResult.AsyncState;
-            Socket handler = dataState.handler;
-            byte[] buffer = dataState.buffer;
+            Socket handler = dataState.Handler;
+            byte[] buffer = dataState.Buffer;
             int messageSize = handler.EndReceive(asyncResult);
 
             if (messageSize > 0)
@@ -95,16 +95,16 @@ namespace Catchy.Multiplayer.GameClient
         public void ShutdownClient()
         {
             // Release the socket.  
-            sender.Shutdown(SocketShutdown.Both);
-            sender.Close();
+            _sender.Shutdown(SocketShutdown.Both);
+            _sender.Close();
         }
 
         public void SendMessage(byte[] data)
         {
-            if (sender.Connected)
+            if (_sender.Connected)
             {
                 // Send the data through the socket.  
-                int bytesSent = sender.Send(data);
+                int bytesSent = _sender.Send(data);
             }
         }
     }

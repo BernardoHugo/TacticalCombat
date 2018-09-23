@@ -1,24 +1,23 @@
-﻿using Catchy.Multiplayer.GameClient;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Net.Sockets;
 using Catchy.Multiplayer.Chat.Common;
 using Catchy.Multiplayer.Common;
+using Newtonsoft.Json;
 
-namespace Catchy.Multiplayer.Chat
+namespace Catchy.Multiplayer.Chat.Client
 {
-    public class ChatHandler : IMessageObserver
+    public class ChatClientHandler : IMessageObserver
     {
-        private Client gameClient;
+        private GameClient.Client _gameClient;
 
-        private const string CHAT_MESSAGE = "chat_message";
+        private const string ChatMessage = "chat_message";
 
         public Action<ChatMessage> OnChatMessageReceived;
 
-        public ChatHandler(Client gameClient)
+        public ChatClientHandler(GameClient.Client gameClient)
         {
-            this.gameClient = gameClient;
-            gameClient.AddMessageObserver(CHAT_MESSAGE, this);
+            this._gameClient = gameClient;
+            gameClient.AddMessageObserver(ChatMessage, this);
         }
 
         public void OnMessageReceived(string data)
@@ -34,7 +33,7 @@ namespace Catchy.Multiplayer.Chat
         {
             ChatMessage chatMessage = new ChatMessage(username,message);
             string chatMessageJson = JsonConvert.SerializeObject(chatMessage);
-            gameClient.SendMessage(ProtocolType.Tcp, CHAT_MESSAGE, chatMessageJson);
+            _gameClient.SendMessage(ProtocolType.Tcp, ChatMessage, chatMessageJson);
         }
     }
 }

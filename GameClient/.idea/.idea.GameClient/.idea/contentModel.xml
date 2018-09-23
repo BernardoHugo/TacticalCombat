@@ -3,56 +3,10 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Bernardo\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Bernardo\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GameClient.1603454529.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Bernardo\Documents\Projects\TacticalCombat\GameClient" t="IncludeRecursive">
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
-      <e p="Assets" t="Include">
-        <e p="Catchy" t="Include">
-          <e p="Multiplayer" t="Include">
-            <e p="Chat" t="Include">
-              <e p="Client" t="Include">
-                <e p="ChatClientHandler.cs" t="Include" />
-              </e>
-              <e p="Common" t="Include">
-                <e p="ChatMessage.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Common" t="Include">
-              <e p="DataState.cs" t="Include" />
-              <e p="IMessageObserver.cs" t="Include" />
-              <e p="SerializableVector3.cs" t="Include" />
-              <e p="ServerMessage.cs" t="Include" />
-            </e>
-            <e p="Component" t="Include">
-              <e p="ChatComponent.cs" t="Include" />
-              <e p="MinionComponent.cs" t="Include" />
-            </e>
-            <e p="GameClient" t="Include">
-              <e p="Client.cs" t="Include" />
-              <e p="TcpConnection.cs" t="Include" />
-            </e>
-            <e p="Movement" t="Include">
-              <e p="Client" t="Include">
-                <e p="TransformClientHandler.cs" t="Include" />
-              </e>
-              <e p="Common" t="Include">
-                <e p="ITransformObserver.cs" t="Include" />
-                <e p="SerializableTransform.cs" t="Include" />
-                <e p="TransformMessage.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
-        <e p="JsonDotNet" t="Include">
-          <e p="link.xml" t="Include" />
-        </e>
-      </e>
+    <e p="C:\Users\Bernardo\Documents\Projects\TacticalCombat\GameClient" t="IncludeFlat">
       <e p="GameClient.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

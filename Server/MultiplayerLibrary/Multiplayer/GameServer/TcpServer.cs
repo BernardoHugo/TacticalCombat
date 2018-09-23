@@ -75,8 +75,8 @@ namespace Catchy.Multiplayer.GameServer
         private void EndReceiveMessage(IAsyncResult asyncResult)
         {
             DataState dataState = (DataState)asyncResult.AsyncState;
-            Socket handler = dataState.handler;
-            byte[] buffer = dataState.buffer;
+            Socket handler = dataState.Handler;
+            byte[] buffer = dataState.Buffer;
             int messageSize = handler.EndReceive(asyncResult);
 
             if (messageSize > 0)

@@ -702,7 +702,7 @@ RectTransform:
   - {fileID: 251315304}
   - {fileID: 1320360636}
   m_Father: {fileID: 1633336134}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -831,9 +831,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1590708977}
-  - {fileID: 2009078756}
   - {fileID: 1762938950}
+  - {fileID: 2009078756}
+  - {fileID: 1590708977}
   m_Father: {fileID: 61357548}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -850,10 +850,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1633336133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58790017dea6b4f459a87835de974c4e, type: 3}
+  m_Script: {fileID: -2067997158, guid: 6799a66d160665d48bfd368dd4d35634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  client: {fileID: 1132528286}
   username: {fileID: 1762938951}
   chat: {fileID: 2125904363}
   messageBox: {fileID: 1590708978}
@@ -962,7 +961,7 @@ RectTransform:
   - {fileID: 1747780734}
   - {fileID: 795850270}
   m_Father: {fileID: 1633336134}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}

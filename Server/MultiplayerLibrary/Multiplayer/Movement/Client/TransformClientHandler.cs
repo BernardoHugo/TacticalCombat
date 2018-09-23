@@ -8,31 +8,31 @@ namespace Catchy.Multiplayer.Movement.Client
 {
     public class TransformClientHandler : IMessageObserver
     {
-        private Dictionary<int, ITransformObserver> transformObservers;
+        private Dictionary<int, ITransformObserver> _transformObservers;
 
-        private GameClient.Client client;
-        private const string TRANSFORM_UPDATE = "transform_update";
+        private GameClient.Client _client;
+        private const string TransformUpdate = "transform_update";
 
         public TransformClientHandler(GameClient.Client client)
         {
-            this.client = client;
+            this._client = client;
         }
 
         public void OnMessageReceived(string data)
         {
             TransformMessage transformMessage = JsonConvert.DeserializeObject<TransformMessage>(data);
 
-            if (transformObservers.ContainsKey(transformMessage.id))
+            if (_transformObservers.ContainsKey(transformMessage.Id))
             {
-                transformObservers[transformMessage.id].OnTransformReceived(transformMessage);
+                _transformObservers[transformMessage.Id].OnTransformReceived(transformMessage);
             }
         }
 
         public void AddTransformObserver(int id, ITransformObserver transformObserver)
         {
-            if (!transformObservers.ContainsKey(id))
+            if (!_transformObservers.ContainsKey(id))
             {
-                transformObservers.Add(id, transformObserver);
+                _transformObservers.Add(id, transformObserver);
             }
         }
 
@@ -42,7 +42,7 @@ namespace Catchy.Multiplayer.Movement.Client
             string transformMessageJson = JsonConvert.SerializeObject(transformMessage);
 
 
-            client.SendMessage(ProtocolType.Udp, TRANSFORM_UPDATE, transformMessageJson);
+            _client.SendMessage(ProtocolType.Udp, TransformUpdate, transformMessageJson);
         }
     }
 }

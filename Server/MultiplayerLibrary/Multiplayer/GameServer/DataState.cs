@@ -4,15 +4,15 @@ namespace Catchy.Multiplayer.GameServer
 {
     class DataState
     {
-        public const int BUFFER_SIZE = 1024;
+        public const int BufferSize = 1024;
 
-        public Socket handler = null;
-        public byte[] buffer = new byte[BUFFER_SIZE];
+        public Socket Handler = null;
+        public byte[] Buffer = new byte[BufferSize];
 
         public DataState(Socket handler, byte[] buffer)
         {
-            this.handler = handler;
-            this.buffer = buffer;
+            this.Handler = handler;
+            this.Buffer = buffer;
         }
     }
 }

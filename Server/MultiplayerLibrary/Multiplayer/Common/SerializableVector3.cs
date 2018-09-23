@@ -1,19 +1,20 @@
 using System;
+using UnityEngine.Serialization;
 
 namespace Catchy.Multiplayer.Common
 {
     [Serializable]
     public struct SerializableVector3
     {
-        public float x;
-        public float y;
-        public float z;
+        [FormerlySerializedAs("x")] public float X;
+        [FormerlySerializedAs("y")] public float Y;
+        [FormerlySerializedAs("z")] public float Z;
 
         public SerializableVector3(float x, float y, float z)
         {
-            this.x = x;
-            this.y = y;
-            this.z = z;
+            this.X = x;
+            this.Y = y;
+            this.Z = z;
         }
     }
 }
