@@ -12,9 +12,19 @@ namespace Catchy.Multiplayer.Component
 
         private Client _client;
 
+        public Client Client
+        {
+            get { return _client; }
+        }
+
         private void Awake()
         {
-            _client = new Client(_serverIp, _serverPort);
+            _client = new Client(_serverIp, _serverPort, false);
+        }
+
+        private void Update()
+        {
+            _client.RunMessageQueue();
         }
     }
 }

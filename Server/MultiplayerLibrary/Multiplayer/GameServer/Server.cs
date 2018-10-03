@@ -7,6 +7,7 @@ using System.Net.Sockets;
 using System.Text;
 using Catchy.Multiplayer.Chat;
 using Catchy.Multiplayer.Common;
+using Catchy.Multiplayer.Movement.Server;
 
 namespace Catchy.Multiplayer.GameServer
 {
@@ -20,6 +21,7 @@ namespace Catchy.Multiplayer.GameServer
         private TcpServer _tcpServer;
 
         private ChatServerHandler _chatServerHandler;
+        private TransformServerHandler _transformServerHandler;
 
         private const int ServerPort = 5050;
 
@@ -38,6 +40,7 @@ namespace Catchy.Multiplayer.GameServer
         private void InitializeHandlers()
         {
             _chatServerHandler = new ChatServerHandler(this);
+            _transformServerHandler = new TransformServerHandler(this);
         }
 
         public void OnClientConnect(Socket clientSocket)

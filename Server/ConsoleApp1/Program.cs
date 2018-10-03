@@ -1,7 +1,7 @@
 ﻿using Catchy.Multiplayer.GameServer;
 using System;
 
-namespace GameServer
+namespace MultiplayerServer
 {
     class Program
     {

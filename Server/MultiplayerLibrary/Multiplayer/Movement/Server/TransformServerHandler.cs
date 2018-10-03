@@ -1,21 +1,20 @@
 using System.Collections.Generic;
 using System.Net.Sockets;
-using Catchy.Multiplayer.Common;
 using Catchy.Multiplayer.Movement.Common;
 using Newtonsoft.Json;
 
-namespace Catchy.Multiplayer.Movement.Client
+namespace Catchy.Multiplayer.Movement.Server
 {
-    public class TransformClientHandler : IMessageObserver
+    public class TransformServerHandler
     {
         private Dictionary<int, ITransformObserver> _transformObservers;
 
-        private GameClient.Client _client;
+        private GameServer.Server _server;
         private const string TransformUpdate = "transform_update";
 
-        public TransformClientHandler(GameClient.Client client)
+        public TransformServerHandler(GameServer.Server server)
         {
-            this._client = client;
+            this._server = server;
             _transformObservers = new Dictionary<int, ITransformObserver>();
         }
 
@@ -27,6 +26,8 @@ namespace Catchy.Multiplayer.Movement.Client
             {
                 _transformObservers[transformMessage.Id].OnTransformReceived(transformMessage);
             }
+            
+            UpdateTransformPosition(transformMessage.Id, transformMessage.Transform);
         }
 
         public void AddTransformObserver(int id, ITransformObserver transformObserver)
@@ -43,7 +44,7 @@ namespace Catchy.Multiplayer.Movement.Client
             string transformMessageJson = JsonConvert.SerializeObject(transformMessage);
 
 
-            _client.SendMessage(ProtocolType.Udp, TransformUpdate, transformMessageJson);
+            _server.SendMessageForAllClients(ProtocolType.Udp, TransformUpdate, transformMessageJson);
         }
     }
 }

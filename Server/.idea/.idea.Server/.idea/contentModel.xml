@@ -60,6 +60,9 @@
               <e p="SerializableTransform.cs" t="Include" />
               <e p="TransformMessage.cs" t="Include" />
             </e>
+            <e p="Server" t="Include">
+              <e p="TransformServerHandler.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="MultiplayerLibrary.csproj" t="IncludeRecursive" />
@@ -68,7 +71,6 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
-        <e p="Teste.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Server.sln" t="IncludeFlat" />

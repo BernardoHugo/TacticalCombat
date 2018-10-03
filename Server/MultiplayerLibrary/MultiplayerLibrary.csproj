@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32bit>false</Prefer32bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32bit>false</Prefer32bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
@@ -66,8 +68,8 @@
     <Compile Include="Multiplayer\Movement\Common\ITransformObserver.cs" />
     <Compile Include="Multiplayer\Movement\Common\SerializableTransform.cs" />
     <Compile Include="Multiplayer\Movement\Common\TransformMessage.cs" />
+    <Compile Include="Multiplayer\Movement\Server\TransformServerHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teste.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

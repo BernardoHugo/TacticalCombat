@@ -11,11 +11,11 @@ namespace Catchy.Multiplayer.Chat
     {
         private Server _gameServer;
 
-        private const string ChatMessage = "chatMessage";
+        private const string ChatMessage = "chat_message";
 
         public ChatServerHandler(Server gameServer)
         {
-            this._gameServer = gameServer;
+            _gameServer = gameServer;
             gameServer.AddMessageObserver(ChatMessage, this);
         }
 
@@ -23,6 +23,9 @@ namespace Catchy.Multiplayer.Chat
         {
             ChatMessage chatMessage = JsonConvert.DeserializeObject<ChatMessage>(data);
             chatMessage.Date = DateTime.Now;
+            
+            Console.WriteLine($"[ChatServerHandler] OnMessageReceived - Date: {chatMessage.Date}, Username: {chatMessage.Username}, Message: {chatMessage.Message} ");
+            
             string chatMessageJson = JsonConvert.SerializeObject(chatMessage);
             _gameServer.SendMessageForAllClients(ProtocolType.Tcp, ChatMessage, chatMessageJson);
         }

@@ -13,16 +13,19 @@ namespace Catchy.Multiplayer.GameClient
 
         private int _serverPort;
 
+        private bool _autoSendMessage;
+
         private TcpConnection _tcpConnection;
 
         private Dictionary<string, IMessageObserver> _messageObservers;
 
         private List<ServerMessage> _serverMessageQueue;
 
-        public Client(string serverIp, int serverPort)
+        public Client(string serverIp, int serverPort, bool autoSendMessage = true)
         {
-            this._serverIp = serverIp;
-            this._serverPort = serverPort;
+            _serverIp = serverIp;
+            _serverPort = serverPort;
+            _autoSendMessage = autoSendMessage;
             
             _messageObservers = new Dictionary<string, IMessageObserver>();
             _serverMessageQueue = new List<ServerMessage>();
@@ -30,7 +33,7 @@ namespace Catchy.Multiplayer.GameClient
             _tcpConnection.OnMessageReceived += OnMessageReceived;
         }
 
-        private void Update()
+        public void RunMessageQueue()
         {
             lock (_serverMessageQueue)
             {
@@ -56,6 +59,11 @@ namespace Catchy.Multiplayer.GameClient
             {
                 ServerMessage message = JsonConvert.DeserializeObject<ServerMessage>(messageJson);
                 _serverMessageQueue.Add(message);
+            }
+            
+            if (_autoSendMessage)
+            {
+                RunMessageQueue();
             }
         }
 
